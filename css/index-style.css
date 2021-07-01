@@ -1,0 +1,45 @@
+.forms
+{
+padding: 10px;
+display: flex;
+justify-content: center;
+}
+.forms .imglogo
+{
+
+width: 50%;
+position: absolute;
+z-index: -1;
+
+}
+.forms .Bienvenido h1
+{
+  display: flex;
+  justify-content: center;
+  color: #0071bd;
+}
+.forms .Bienvenido img
+{
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  background: red;
+  width: 30%;
+  position: relative;
+  left: 35%
+
+}
+.forms .Bienvenido .logo-name
+{
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  bottom: 15%;
+
+}
+.asd
+{
+  display: flex;
+  justify-content: center;
+}

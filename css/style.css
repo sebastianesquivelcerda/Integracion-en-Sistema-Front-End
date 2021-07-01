@@ -1,0 +1,44 @@
+
+.padre-supremo
+{
+  display: flex;
+  padding: 50px;
+  width: 1000px;
+  height: 1000px;
+  background: blue;
+  justify-content: space-between;
+
+}
+.padre-primero
+{
+  display: flex;
+  padding: 100px;
+  width: 20%;
+  height: 20%;
+  background: red;
+
+}
+.padre-primero .hijo-primero
+{
+width: 20%;
+height: 20%;
+position: relative;
+bottom: 58%;
+right: 58%;
+background: antiquewhite;
+border-radius: 100px;
+align-items: center;
+
+}
+.padre-segundo
+{
+
+  padding: 100px;
+  width: 20%;
+  height: 20%;
+  background: yellow;
+}
+.carousel-inner img {
+   width: 50px;
+   height: 50px;
+ }
