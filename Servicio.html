@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Servicio</title>
+    <link rel="stylesheet" type="text/css" href="css/index-style.css">
+  <!--===============================================================================================-->
+  <!--===============================================================================================-->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+  // ---------Responsive-navbar-active-animation-----------
+function test(){
+var tabsNewAnim = $('#navbarSupportedContent');
+var selectorNewAnim = $('#navbarSupportedContent').find('li').length;
+var activeItemNewAnim = tabsNewAnim.find('.active');
+var activeWidthNewAnimHeight = activeItemNewAnim.innerHeight();
+var activeWidthNewAnimWidth = activeItemNewAnim.innerWidth();
+var itemPosNewAnimTop = activeItemNewAnim.position();
+var itemPosNewAnimLeft = activeItemNewAnim.position();
+$(".hori-selector").css({
+  "top":itemPosNewAnimTop.top + "px",
+  "left":itemPosNewAnimLeft.left + "px",
+  "height": activeWidthNewAnimHeight + "px",
+  "width": activeWidthNewAnimWidth + "px"
+});
+$("#navbarSupportedContent").on("click","li",function(e){
+  $('#navbarSupportedContent ul li').removeClass("active");
+  $(this).addClass('active');
+  var activeWidthNewAnimHeight = $(this).innerHeight();
+  var activeWidthNewAnimWidth = $(this).innerWidth();
+  var itemPosNewAnimTop = $(this).position();
+  var itemPosNewAnimLeft = $(this).position();
+  $(".hori-selector").css({
+    "top":itemPosNewAnimTop.top + "px",
+    "left":itemPosNewAnimLeft.left + "px",
+    "height": activeWidthNewAnimHeight + "px",
+    "width": activeWidthNewAnimWidth + "px"
+  });
+});
+}
+$(document).ready(function(){
+setTimeout(function(){ test(); });
+});
+$(window).on('resize', function(){
+setTimeout(function(){ test(); }, 500);
+});
+$(".navbar-toggler").click(function(){
+setTimeout(function(){ test(); });
+});
+  </script>
+
+      <link rel="stylesheet" type="text/css" href="css/util.css">
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+      <link rel="stylesheet" type="text/css" href="css/navar.css">
+      <link rel="stylesheet" type="text/css" href="css/ActualizarDatos.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+    <div class="w3-content">
+
+<div class="w3-row-padding">
+  <nav class="navbar navbar-expand-custom navbar-mainbg">
+    <a class="navbar-brand navbar-logo" href="index.html">Inmobilis</a>
+    <button style="border-style: groove; border-color: white;border-radius: 100%;margin-right:3%;" class="navbar-toggler-icon" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars text-white"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+            <li class="nav-item">
+                <a  style="display: flex;justify-content: center;" class="nav-link" href="actualizarDatos.html"><i class="fas fa-tachometer-alt"></i>Actualizar Datos</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="Servicio.html"><i class="far fa-address-book"></i>Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Pago.html"><i class="far fa-clone"></i>Pago</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>Gestion</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="Login.html"><i class="far fa-copy"></i>Salir</a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+</div>
+
+<div class="d-flex" style="justify-content: center;">
+<h1 >Servicio</h1>
+</div>
+
+<div class="w3-half" style="margin-left:1%">
+  <h3 class="w3-row d-flex" style="justify-content:center;";>Los Angeles</h3>
+  <img style="width: 80%" src="images/casa1.jpg" alt="">
+</div>
+<div class="w3-third d-flex"  style="justify-content: center; font-size: 130%">
+  <div style="margin-top: 10%;">
+    <span>Una Casa Bonita</span>
+    <span>Grande</span>
+    <span>Espaciosa</span>
+    <span>Gigante</span>
+    <span>Con Arto Espacio</span>
+    <span>hermosa</span>
+    <span>preciosa</span>
+    <span>maravillosa</span>
+    <span>esplendida</span>
+    <span>deslumbrante</span>
+    <span>en Excelente Estado</span>
+    <span>bien ubicada</span>
+    <span>en</span>
+    <span>los</span>
+    <span>angeles</span>
+    <span>:)</span>
+  </div>
+    </div>
+<div  class="w3-container">
+  <div class="w3-row">
+  <a href="Pago.html"> <label style="display: flex; justify-content: center; margin-top: 10%;" for=""><button style="width: 50%; height: 50px;" class="btn-primary" type="button" name="button" >REALIZAR RESERVA</button></label></a>
+
+  </div>
+</div>
+
+
+
+  </body>
+</html>

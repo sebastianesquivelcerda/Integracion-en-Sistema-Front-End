@@ -1,0 +1,26 @@
+.LOSDATOS
+{
+  padding: 5%;
+  top: 2%;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
+}
+.DDDD
+{
+  display: flex;
+  justify-content: space-around;
+
+}
+.eldatito
+{
+  padding: 2%;
+}
+.eldatito h1
+{
+  display: flex;
+  justify-content: flex-start;
+  font-size: x-large
+
+}

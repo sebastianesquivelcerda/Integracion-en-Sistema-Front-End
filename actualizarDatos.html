@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/index-style.css">
+  <!--===============================================================================================-->
+  <!--===============================================================================================-->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+  // ---------Responsive-navbar-active-animation-----------
+function test(){
+var tabsNewAnim = $('#navbarSupportedContent');
+var selectorNewAnim = $('#navbarSupportedContent').find('li').length;
+var activeItemNewAnim = tabsNewAnim.find('.active');
+var activeWidthNewAnimHeight = activeItemNewAnim.innerHeight();
+var activeWidthNewAnimWidth = activeItemNewAnim.innerWidth();
+var itemPosNewAnimTop = activeItemNewAnim.position();
+var itemPosNewAnimLeft = activeItemNewAnim.position();
+$(".hori-selector").css({
+  "top":itemPosNewAnimTop.top + "px",
+  "left":itemPosNewAnimLeft.left + "px",
+  "height": activeWidthNewAnimHeight + "px",
+  "width": activeWidthNewAnimWidth + "px"
+});
+$("#navbarSupportedContent").on("click","li",function(e){
+  $('#navbarSupportedContent ul li').removeClass("active");
+  $(this).addClass('active');
+  var activeWidthNewAnimHeight = $(this).innerHeight();
+  var activeWidthNewAnimWidth = $(this).innerWidth();
+  var itemPosNewAnimTop = $(this).position();
+  var itemPosNewAnimLeft = $(this).position();
+  $(".hori-selector").css({
+    "top":itemPosNewAnimTop.top + "px",
+    "left":itemPosNewAnimLeft.left + "px",
+    "height": activeWidthNewAnimHeight + "px",
+    "width": activeWidthNewAnimWidth + "px"
+  });
+});
+}
+$(document).ready(function(){
+setTimeout(function(){ test(); });
+});
+$(window).on('resize', function(){
+setTimeout(function(){ test(); }, 500);
+});
+$(".navbar-toggler").click(function(){
+setTimeout(function(){ test(); });
+});
+  </script>
+
+      <link rel="stylesheet" type="text/css" href="css/util.css">
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+      <link rel="stylesheet" type="text/css" href="css/navar.css">
+      <link rel="stylesheet" type="text/css" href="css/ActualizarDatos.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!--===============================================================================================-->
+
+  </head>
+  <body>
+
+            <div class="w3-container-sm">
+              <nav class="navbar navbar-expand-custom navbar-mainbg">
+                <a class="navbar-brand navbar-logo" href="index.html">Inmobilis</a>
+                <button style="border-style: groove; border-color: white;border-radius: 100%;margin-right:3%;" class="navbar-toggler-icon" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+                        <li class="nav-item">
+                            <a  style="display: flex;justify-content: center;" class="nav-link" href="actualizarDatos.html"><i class="fas fa-tachometer-alt"></i>Actualizar Datos</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Servicio.html"><i class="far fa-address-book"></i>Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Pago.html"><i class="far fa-clone"></i>Pago</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>Gestion</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Login.html"><i class="far fa-copy"></i>Salir</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+<div class="w3-container" style="
+    display: flex;
+    justify-content: center;
+">
+
+  <div class="w3-half">
+
+      <div class="LOSDATOS">
+                <h1>Actualizar Datos</h1>
+      </div>
+      <div class="eldatito">
+                <h1 >Tus Datos</h1>
+      </div>
+
+      <div class="LOSDATOS">
+        <label>nombre: Sebastian Esquivel</label>
+        <label>Rut: 19953603-6</label>
+
+      </div>
+      <div class="LOSDATOS">
+        <label>Fecha de Nacimiento:  1/03/1998</label>
+
+</div>
+
+
+
+
+</div>
+
+
+            </div>
+
+
+
+<div style="display:flex; justify-content: center">
+
+    <div class="w3-container w3-third">
+    <label class="w3-text-blue"><b>Nombre</b></label>
+    <input class="w3-input w3-border" type="text">
+
+    <label class="w3-text-blue"><b>Last Name</b></label>
+    <input class="w3-input w3-border" type="text">
+
+    <label class="w3-text-blue"><b>Last Name</b></label>
+    <input class="w3-input w3-border" type="text">
+
+    <button class="w3-btn w3-blue">Register</button>
+    </div>
+
+
+
+    <div class="w3-container w3-third">
+    <label class="w3-text-blue"><b>Nombre</b></label>
+    <input class="w3-input w3-border" type="text">
+
+    <label class="w3-text-blue"><b>Last Name</b></label>
+    <input class="w3-input w3-border" type="text">
+
+    <label class="w3-text-blue"><b>Last Name</b></label>
+    <input class="w3-input w3-border" type="text">
+
+    <button class="w3-btn w3-blue">Register</button>
+
+
+
+</div>
+  </div>
+
+
+
+</div>
+
+
+  </body>
+</html>
